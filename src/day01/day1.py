@@ -36,7 +36,7 @@ def walker(input, expected):
 
     dist = abs(iCurrentPos.imag) + abs(iCurrentPos.real)
     if dist == expected:
-        print("Correct total distance traveled: ", dist)
+        print("Correct total distance: ", dist)
     else:
         print("Expected: ", expected, "but got: ", dist)
 
@@ -44,7 +44,7 @@ def walker(input, expected):
 walker(exampleInput1, exampleResult1)
 walker(exampleInput2, exampleResult2)
 walker(exampleInput3, exampleResult3)
-walker(realInput, 0)
+walker(realInput, 236)
 
 print("\n")
 
@@ -75,19 +75,19 @@ def walker2(input, expected):
 
             if complexString in dDict:
                 break #same position visited twice
-            i += 1
             dDict[complexString] = 1
+            i += 1
         if i < numberOfSteps:
             break #Break also the other of loop
 
     dist = abs(iCurrentPos.imag) + abs(iCurrentPos.real)
     if dist == expected:
-        print("B: Correct total distance traveled: ", dist)
+        print("B: Correct total distance: ", dist)
     else:
         print("B: Expected: ", expected, "but got: ", dist)
 
 walker2("R8, R4, R4, R8", 4)
-walker2(realInput, 0)
+walker2(realInput, 182)
 
 
 
