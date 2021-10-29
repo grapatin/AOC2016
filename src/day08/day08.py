@@ -90,6 +90,6 @@ def problemA(input, expectedResult, w, h):
         print("Incorrect solution, we got:", solution, "expected:", expectedResult)
 
 problemA(exampleInput1, exampleResult1, 7, 3)
-problemA(problemInputTxt, 0, 50, 6)
+problemA(problemInputTxt, 128, 50, 6)
 print("\n")
 
