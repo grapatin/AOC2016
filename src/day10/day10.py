@@ -67,8 +67,8 @@ class microBot:
                     storageDict[self.giveLowToId].addChip(self.chipB)
                 else:
                     print('output:', self.giveLowToId, 'has value:', self.chipB)
-                
                 self.chipB = None
+                
                 if self.giveHighToOutput != True:
                     storageDict[self.giveHighToId].addChip(self.chipA)
                 else:
@@ -136,6 +136,8 @@ def problemA(input, expectedResult, valueA, valueB):
         print("Incorrect solution, we got:", solution, "expected:", expectedResult)
 
 problemA(exampleInput1, exampleResult1, 5, 2)
+
+storageDict = {}
 problemA(problemInputTxt, 0, 61, 17)
 print("\n")
 
