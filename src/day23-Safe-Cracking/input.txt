@@ -1,0 +1,26 @@
+cpy a b
+dec b
+cpy a d
+cpy 0 a
+cpy b c
+nop              #i n c a      #same as a = a+c  #
+nop              #d e c c      #                   #
+nop              #j n z c -2   #                   #
+nop              #d e c d                          #
+cxd              #j n z d -5                       # same as a = a + (c*d)
+dec b
+cpy b c
+cpy c d
+dec d
+inc c
+jnz d -2
+tgl c
+cpy -16 c
+jnz 1 c
+cpy 77 c
+jnz 73 d
+inc a
+inc d
+jnz d -2
+inc c
+jnz c -5

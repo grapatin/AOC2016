@@ -6,7 +6,7 @@ from os import X_OK
 from pathlib import Path
 
 problemInputTxt = Path(
-    "/Users/pergrapatin/Source/AOC2016/src/day13/input.txt").read_text()
+    "/Users/pergrapatin/Source/AOC2016/src/day13-A-Maze-Of-Twisty-Little-Cubicles/input.txt").read_text()
 
 
 def stringWorker(input):
@@ -43,7 +43,7 @@ def mazeCrawler(currX, currY, reachX, reachY, distanceTraveled):
         #target found
         if cordString(tX, tY) in storageXY and storageXY[cordString(tX,tY)] == '.':            
             if cordString(tX, tY) not in storageFastestWay or storageFastestWay[cordString(tX,tY)] > newDistanceTravaled:
-                #new possible position found
+                    #new possible position found
                 storageFastestWay[cordString(tX, tY)] = newDistanceTravaled
                 mazeCrawler(tX, tY, reachX, reachY, newDistanceTravaled)
 

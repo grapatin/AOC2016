@@ -5,7 +5,7 @@ from os import path
 from pathlib import Path
 import hashlib
 
-problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day17/input.txt").read_text()
+problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day17-Two-Steps-Forward/input.txt").read_text()
 
 exampleInput1 = """aaaaa-bbb-z-y-x-123[abxyz]
 a-b-c-d-e-f-g-h-987[abcde]

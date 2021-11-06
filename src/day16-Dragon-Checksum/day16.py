@@ -4,7 +4,7 @@ import cmath
 #import Path for file operations
 from pathlib import Path
 
-problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day16/input.txt").read_text()
+problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day16-Dragon-Checksum/input.txt").read_text()
 
 exampleInput1 = """10000"""
 exampleResult1 = '01100'

@@ -7,7 +7,7 @@ from collections import deque
 import itertools
 
 problemInputTxt = Path(
-    "/Users/pergrapatin/Source/AOC2016/src/day21/input.txt").read_text()
+    "/Users/pergrapatin/Source/AOC2016/src/day21-Scrambled-Letters-And-Hash/input.txt").read_text()
 
 exampleInput1 = """swap position 4 with position 0
 swap letter d with letter b

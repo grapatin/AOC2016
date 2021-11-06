@@ -4,7 +4,7 @@ import cmath
 #import Path for file operations
 from pathlib import Path
 
-problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day18/input.txt").read_text()
+problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day18-Like-An-Rouge/input.txt").read_text()
 
 exampleInput1 = """.^^.^.^^^^"""
 exampleResult1 = 38

@@ -5,7 +5,7 @@ import cmath
 from pathlib import Path
 
 problemInputTxt = Path(
-    "/Users/pergrapatin/Source/AOC2016/src/day12/input.txt").read_text()
+    "/Users/pergrapatin/Source/AOC2016/src/day12-Leonardi-Monorail/input.txt").read_text()
 
 exampleInput1 = """cpy 41 a
 inc a
@@ -14,7 +14,6 @@ dec a
 jnz a 2
 dec a"""
 exampleResult1 = 42
-
 
 class bunnyMC:
     def __init__(self, problemB=False):
@@ -54,6 +53,8 @@ class bunnyMC:
         codeparts = codeString.split(' ')
         check = codeparts[1]
         rel = codeparts[2]
+        if rel in self.regDict:
+            rel = self.regDict[rel]
         if check in self.regDict:
             if (self.regDict[check] == 0):
                 self.pc += 1

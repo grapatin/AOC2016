@@ -4,7 +4,7 @@ import cmath
 #import Path for file operations
 from pathlib import Path
 
-problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day15/input.txt").read_text()
+problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day15-Timing-Is-Everything/input.txt").read_text()
 
 exampleInput1 = """Disc #1 has 5 positions; at time=0, it is at position 4.
 Disc #2 has 2 positions; at time=0, it is at position 1."""

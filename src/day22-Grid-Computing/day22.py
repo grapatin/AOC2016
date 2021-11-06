@@ -4,7 +4,7 @@ import cmath
 #import Path for file operations
 from pathlib import Path
 
-problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day22/input.txt").read_text()
+problemInputTxt = Path("/Users/pergrapatin/Source/AOC2016/src/day22-Grid-Computing/input.txt").read_text()
 
 def stringWorker(input):
     aSteps = input.split("\n")
@@ -74,7 +74,6 @@ def problemB(input, expectedResult, numberOfX = 30, numberOfY = 35):
                 print('#', end='')
             else:
                 print('.', end='')
-        
         print('')
         
     solution = 198
